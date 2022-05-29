@@ -1,0 +1,224 @@
+@font-face {
+    font-family: Zonapro;
+    src: url('./fonts/zonapro-regular.otf');
+}
+@font-face {
+    font-family: ZonaPro-semibold;
+    src: url('./fonts/zonapro-semibold.otf');
+}
+@font-face {
+    font-family: ZonaPro-ultra;
+    src: url('./fonts/zonapro-ultra.otf');
+}
+
+body {
+    font-family: ZonaPro;
+    margin: 0px auto;
+    overflow-x: hidden;
+}
+
+a, h2, h4, button {
+    font-family: ZonaPro-semibold;
+}
+
+h1 {
+    font-family: ZonaPro-ultra;
+}
+
+.header-wrapper {
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-image {
+    width: 60%;
+    transform: scale(1.6);
+    z-index: -1;
+}
+
+.navbar-togller-btn:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url('./Images/navbar-toggler.svg');
+    width: 18px;
+    height: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.open-vacancies-wrapper {
+    background-image: url('./Images/job-offers-bro.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 410px;
+    height: 410px;
+    top: -10%;
+    right: 14%;
+}
+
+.social-media-icons {
+    font-size: 27px;
+}
+
+.clients-logo-wrapper {
+    column-gap: 100px;
+    flex-wrap: nowrap;
+}
+
+.job-offers-img-wrapper > img {
+    transform: scale(1.5);
+}
+
+.green-line-image-wrapper img {
+    position: absolute;
+    top: -160px;
+    right: 0px;
+    transform: scale(0.8);
+}
+
+.open-vacancies-wrapper:hover {
+    background-image: url('./Images/job-offers-bro-hover.png');
+}
+
+.contact-us_gradient {
+    background: rgb(247,247,247);
+    background: linear-gradient(0deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 80%, rgba(255,255,255,1) 100%);
+}
+
+.form-textarea {
+    resize: none;
+    outline: none;
+    height: 160px;
+}
+
+.form-responsive-fonts:not(h1) {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 375px) {
+    .navbar-image {
+        height: 24px;
+    }
+    .navbar-light .navbar-toggler-icon {
+        width: 18px;
+        height: 14px;
+    }
+    .navbar-right-btn {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .social-media-icons {
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    .navbar-image {
+        height: 30px;
+    }
+    .navbar-light .navbar-toggler-icon {
+        width: 27px;
+        height: 21px;
+    }
+    .navbar-right-btn {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .social-media-icons {
+        font-size: 20px;
+    }
+    .form-textarea {
+        height: 80px;
+    }
+    .job-offers-img-wrapper > img {
+        transform: scale(1);
+    }
+    .green-line-texts h1 {
+        font-size: calc(0.6rem + 2.8vw);
+    }
+    .form-responsive-fonts h1 {
+        font-size: calc(0.6rem + 2.8vw);
+    }
+    .form-responsive-fonts h6 {
+        font-size: calc(0.6rem + 1.2vw);
+    }
+    .form-responsive-fonts input, .form-responsive-fonts textarea {
+        font-size: calc(0.6rem + 1.2vw);
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    .navbar-image {
+        height: 36px;
+    }
+    .navbar-light .navbar-toggler-icon {
+        width: 36px;
+        height: 28px;
+    }
+    .navbar-right-btn {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .social-media-icons {
+        font-size: 22px;
+    }
+    .form-textarea {
+        height: 100px;
+    }
+    .job-offers-img-wrapper > img {
+        transform: scale(1.2);
+    }
+    .green-line-texts h1 {
+        font-size: calc(0.6rem + 2.5vw);
+    }
+    .header-image {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar-image {
+        height: 42px;
+    }
+    .social-media-icons {
+        font-size: 18px;
+    }
+    .form-textarea {
+        height: 120px;
+    }
+    .green-line-texts h1 {
+        font-size: calc(0.6rem + 2.5vw);
+    }
+    .header-image {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    .social-media-icons {
+        font-size: 24px;
+    }
+    .form-textarea {
+        height: 140px;
+    }
+    .green-line-texts h1 {
+        font-size: calc(0.6rem + 2.5vw);
+    }
+    .header-image {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .header-image {
+        width: 100%;
+    }
+    .green-line-image-wrapper img {
+        right: 120px;
+        transform: scale(0.9);
+        top: -140px;
+    }
+}
