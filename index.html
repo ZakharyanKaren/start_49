@@ -15,7 +15,7 @@
 
 <body>
     <div class="container-xxl p-0">
-        <div class="mx-3 mx-sm-4 mx-md-5 mx-lg-6 mx-xl-7 mx-xxl-8 pb-5 pb-sm-6 pb-md-7 pb-lg-9 pb-xl-12">
+        <div class="px-3 px-sm-4 px-md-5 px-lg-6 px-xl-7 px-xxl-8 pb-5 pb-sm-6 pb-md-7 pb-lg-9 pb-xl-12">
             <nav class="navbar navbar-expand-lg navbar-light pt-3 pt-sm-4 pt-md-5 pt-lg-6 pt-xl-7 pt-xxl-8 pb-0">
                 <div class="container-fluid p-0">
                     <a href="#" class="navbar-brand p-0">
@@ -29,19 +29,19 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0 me-lg-8 align-items-center">
                             <li class="nav-item px-3">
-                                <a class="nav-link d-flex text-center active" aria-current="page" href="#">
+                                <a class="nav-link d-flex text-center active" aria-current="page" href="#home">
                                     <img src="./Images/home_icon.svg" class="me-2" alt="home" />
                                     Home
                                 </a>
                             </li>
                             <li class="nav-item px-2">
-                                <a href="#" class="nav-link text-center text-dark">Services</a>
+                                <a href="#services" class="nav-link text-center text-dark">Services</a>
                             </li>
                             <li class="nav-item px-2">
-                                <a href="#" class="nav-link text-center text-dark">Our Clients</a>
+                                <a href="#clients" class="nav-link text-center text-dark">Our Clients</a>
                             </li>
                             <li class="nav-item px-2">
-                                <a href="#" class="nav-link text-center text-dark">Contact us</a>
+                                <a href="#contact" class="nav-link text-center text-dark">Contact us</a>
                             </li>
                         </ul>
                         <a class="nav-link btn btn-success text-white px-4 py-16 rounded-1 navbar-right-btn">
@@ -78,19 +78,19 @@
                         </a>
                     </div>
                 </div>
-                <div class="col col-lg-6">
+                <div class="col col-lg-6 overflow-hidden">
                     <img src="./Images/home_image.svg" alt="logo" class="header-image col col-lg-6 pe-lg-3" />
                 </div>
             </div>
 
             <div class="d-none d-lg-block mb-10 text-center">
-                <a href="#next-section" class="">
+                <a href="#services" class="">
                     <img src="./Images/arrow_down_circle.svg" alt="arrow down" />
                 </a>
             </div>
 
             <div>
-                <h1 id="next-section" class="display-5 fw-bold text-center mb-3">Outstaffing Services</h1>
+                <h1 id="services" class="display-5 fw-bold text-center mb-3">Outstaffing Services</h1>
                 <h6 class="text-center mb-7">
                     Start49 offers a full spectrum of IT services for the fulfillment of a variety of projects.
                     <br />
@@ -289,7 +289,7 @@
                 </div>
             </div>
 
-            <div class="mt-xxl-12 mt-xl-11 mt-lg-10 mt-md-9 mt-sm-8 mt-7">
+            <div id="clients" class="mt-xxl-12 mt-xl-11 mt-lg-10 mt-md-9 mt-sm-8 mt-7">
                 <div class="row justify-content-center mb-4 mb-lg-7">
                     <h1 class="display-5 fw-bold text-center mb-3">Our clients</h1>
                     <div class="col col-xl-7 col-lg-8 col-md-9 col-sm-10 px-0 px-lg-4 px-md-3">
@@ -322,8 +322,9 @@
             </div>
         </div>
 
-        <div class="row bg-success py-5">
-            <div class="col-10 ps-lg-8">
+        <div
+            class="green-line-wrapper row bg-success py-3 py-lg-5 px-3 px-lg-0 flex-column-reverse flex-lg-row text-center text-lg-start">
+            <div class="col col-lg-6 ps-lg-8">
                 <h1 class="display-5 fw-bold mb-3 text-white">Looking for new opportunities?</h1>
                 <h6 class="mb-4 text-white">
                     We have extensive experience working with a number of companies and being trusted partners.
@@ -333,19 +334,19 @@
                     Check Vacancies
                 </button>
             </div>
-            <div class="col-2 green-line-image-wrapper position-relative">
+            <div class="col col-lg-6 green-line-image-wrapper position-relative">
                 <img src='./Images/job_offers_bro.svg' alt="job offers" class="img">
             </div>
         </div>
 
-        <div class="mx-7 pt-5 pt-lg-6  pt-xl-9">
+        <div class="px-3 px-sm-4 px-md-5 px-lg-6 px-xl-7 px-xxl-8 pt-5 pt-lg-7 pt-xl-9">
             <div class="mx-auto mb-7">
                 <h1 class="display-5 fw-bold text-center mb-3">Client Testimonials</h1>
                 <h6 class="text-center mb-7 px-xxl-7">
                     We proudly power these ambitious and progressive IT companies
                 </h6>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid p-0">
                 <div
                     class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-4 g-sm-3 g-lg-4 fs-10">
                     <div class="col">
@@ -507,9 +508,10 @@
             </div>
         </div>
 
-        <div class="container-fluid contact-us_gradient bg-light px-0 pt-13 pb-12">
+        <div id="contact"
+            class="container-fluid contact-us_gradient bg-light py-6 py-sm-7 py-lg-9 px-2 px-sm-3 px-md-4 px-lg-6">
             <div
-                class="col-9 d-flex align-items-center flex-column-reverse flex-lg-row p-3 p-lg-6 p-xl-8 mb-7 mx-auto bg-white rounded-3">
+                class="form-wrapper d-flex align-items-center flex-column-reverse flex-lg-row p-3 p-lg-6 p-xl-8 mb-7 mx-auto bg-white rounded-3">
                 <div class="form-responsive-fonts col col-lg-6">
                     <h1 class="display-5 fw-bold mb-3">Reach out now</h1>
                     <h6 class="mb-4">
@@ -517,21 +519,20 @@
                         solution for your needs.
                     </h6>
 
-                    <form class="row">
-                        <div class="col-6 mb-2 mb-lg-3 mb-xl-4">
-                            <input class="form-control bg-light ps-2 ps-md-3 ps-lg-4 py-2 py-lg-3 rounded-1 lh-1"
-                                type="text" placeholder="Name">
+                    <form class="row row-cols-1">
+                        <div class="col col-lg-6 mb-2 mb-lg-3 mb-xl-4">
+                            <input class="form-control form-control-lg bg-light rounded-1 lh-1" type="text"
+                                placeholder="Name">
                         </div>
-                        <div class="col-6 mb-2 mb-lg-3 mb-xl-4">
-                            <input class="form-control bg-light ps-2 ps-md-3 ps-lg-4 py-2 py-lg-3 rounded-1 lh-1"
-                                type="text" placeholder="Company">
+                        <div class="col col-lg-6 mb-2 mb-lg-3 mb-xl-4">
+                            <input class="form-control form-control-lg bg-light rounded-1 lh-1" type="text"
+                                placeholder="Company">
                         </div>
-                        <div class="mb-2 mb-lg-3 mb-xl-4">
-                            <input type="email"
-                                class="form-control bg-light ps-2 ps-md-3 ps-lg-4 py-2 py-lg-3 rounded-1 lh-1"
+                        <div class="col mb-2 mb-lg-3 mb-xl-4">
+                            <input type="email" class="form-control form-control-lg bg-light rounded-1 lh-1"
                                 id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
                         </div>
-                        <div class="form-floating mb-2 mb-lg-3 mb-xl-4">
+                        <div class="col form-floating mb-2 mb-lg-3 mb-xl-4 border-0">
                             <textarea class="form-textarea w-100 border bg-light rounded-1 px-2 px-lg-4 py-2 py-lg-3"
                                 placeholder="Your message here" id="floatingTextarea2"></textarea>
                         </div>

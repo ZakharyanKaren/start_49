@@ -73,11 +73,12 @@ h1 {
     transform: scale(1.5);
 }
 
+.green-line-wrapper {
+    --bs-gutter-x: 0;
+}
+
 .green-line-image-wrapper img {
-    position: absolute;
-    top: -160px;
-    right: 0px;
-    transform: scale(0.8);
+    max-width: 100%;
 }
 
 .open-vacancies-wrapper:hover {
@@ -93,6 +94,10 @@ h1 {
     resize: none;
     outline: none;
     height: 160px;
+}
+
+.form-wrapper {
+    max-width: 1100px;
 }
 
 .form-responsive-fonts:not(h1) {
@@ -195,6 +200,12 @@ h1 {
     .header-image {
         width: 100%;
     }
+    .green-line-image-wrapper img {
+        position: absolute;
+        top: -130px;
+        right: 70px;
+        transform: scale(0.9);
+    }
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1440px) {
@@ -210,6 +221,12 @@ h1 {
     .header-image {
         width: 100%;
     }
+    .green-line-image-wrapper img {
+        position: absolute;
+        top: -160px;
+        right: 60px;
+        transform: scale(0.8);
+    }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -220,5 +237,11 @@ h1 {
         right: 120px;
         transform: scale(0.9);
         top: -140px;
+    }
+    .green-line-image-wrapper img {
+        position: absolute;
+        top: -160px;
+        right: 120px;
+        transform: scale(0.8);
     }
 }
